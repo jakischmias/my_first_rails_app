@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Generate:</strong>
+  <%= @carrail.generate %>
+</p>
+
+<p>
+  <strong>Scaffold:</strong>
+  <%= @carrail.scaffold %>
+</p>
+
+<p>
+  <strong>Car:</strong>
+  <%= @carrail.car %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @carrail.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @carrail.model %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @carrail.year %>
+</p>
+
+<%= link_to 'Edit', edit_carrail_path(@carrail) %> |
+<%= link_to 'Back', carrails_path %>

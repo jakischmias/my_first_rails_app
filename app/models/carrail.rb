@@ -1,0 +1,2 @@
+class Carrail < ApplicationRecord
+end

@@ -1,0 +1,47 @@
+<%= form_with(model: carrail, local: true) do |form| %>
+  <% if carrail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(carrail.errors.count, "error") %> prohibited this carrail from being saved:</h2>
+
+      <ul>
+      <% carrail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :generate %>
+    <%= form.text_field :generate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scaffold %>
+    <%= form.text_field :scaffold %>
+  </div>
+
+  <div class="field">
+    <%= form.label :car %>
+    <%= form.text_field :car %>
+  </div>
+
+  <div class="field">
+    <%= form.label :make %>
+    <%= form.text_field :make %>
+  </div>
+
+  <div class="field">
+    <%= form.label :model %>
+    <%= form.text_field :model %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

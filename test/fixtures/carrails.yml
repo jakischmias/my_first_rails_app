@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  generate: MyString
+  scaffold: MyString
+  car: MyString
+  make: MyString
+  model: MyString
+  year: 1
+
+two:
+  generate: MyString
+  scaffold: MyString
+  car: MyString
+  make: MyString
+  model: MyString
+  year: 1
